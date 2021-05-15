@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>VendingMachine</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <h1>Vending Machine</h1>
+    <section id="content">
+      <div class="settings">
+        <div>
+          <h3>Add Category:</h3>
+          <form action="">
+            <label for="nameAddCategory">Name:</label><br />
+            <input type="text" id="nameAddCategory" /><br />
+            <label for="priceAddCategory">Price:</label><br />
+            <input type="text" id="priceAddCategory" /><br />
+            <label for="quantityAddCategory">Quantity:</label><br />
+            <input
+              type="text"
+              id="quantityAddCategory"
+              placeholder="optional, default 0"
+            />
+            <input type="button" value="Add" onclick="addCategory()" />
+          </form>
+        </div>
+        <div>
+          <h3>Add Item:</h3>
+          <form action="">
+            <label for="nameAddItem">Name:</label><br />
+            <input type="text" id="nameAddItem" name="nameAddItem" /><br />
+            <label for="quantityAddItem">Quantity:</label><br />
+            <input type="text" id="quantityAddItem" name="quantityAddItem" />
+            <input type="button" value="Add" onclick="addItem()" />
+          </form>
+        </div>
+        <div>
+          <h3>Purchase:</h3>
+          <form action="">
+            <label for="namePurchase">Name:</label><br />
+            <input type="text" id="namePurchase" /><br />
+            <label for="datePurchase">Date:</label><br />
+            <input type="text" id="datePurchase" />
+            <input type="button" value="Buy" onclick="purchase()" />
+          </form>
+        </div>
+        <div>
+          <h3>Report:</h3>
+          <form action="">
+            <label for="dateReport">Date:</label>
+            <input type="text" id="dateReport" />
+            <input type="button" value="Report" onclick="report()" />
+          </form>
+        </div>
+        <div>
+          <h3 class="inline">List:</h3>
+          <button type="button" onclick="list()">List</button>
+          <h4>
+            Press the "List" button above to show the list of served categories
+            with the quantity of items available for sale sorted by quantity.
+          </h4>
+        </div>
+        <div>
+          <h3 class="inline">Clear:</h3>
+          <button type="button" onclick="clearr()">Clear</button>
+          <h4>
+            Press the "Clear" button above to stop serving all the snack
+            categories that do not have items for sale.
+          </h4>
+        </div>
+      </div>
+      <div class="display">
+        <div id="categories">
+          <h3>Categories:</h3>
+          <ul class="categories"></ul>
+        </div>
+        <div id="report">
+          <h3>Report:</h3>
+          <ul class="report"></ul>
+        </div>
+        <div id="list">
+          <h3>List:</h3>
+          <ul class="list"></ul>
+        </div>
+      </div>
+    </section>
+    <script src="./script.js" charset="utf-8"></script>
+  </body>
+</html>
