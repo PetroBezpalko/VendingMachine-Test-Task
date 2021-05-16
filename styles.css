@@ -1,3 +1,4 @@
+/* ***************************** Tags-start */
 body {
   background-color: rgb(236, 228, 228);
 }
@@ -22,7 +23,9 @@ h4 {
 strong {
   color: blue;
 }
+/* ****************************** Tags-end */
 
+/* ****************************** Id-start */
 #content {
   padding-left: 10%;
   display: grid;
@@ -41,6 +44,8 @@ strong {
 #list {
   background-color: rgb(216, 208, 197);
 }
+/* ******************************* Id-end */
+/* ******************************* Class-start */
 .display {
   display: grid;
   grid-template-rows: auto auto auto;
@@ -50,3 +55,4 @@ strong {
   display: inline-block;
   padding-bottom: 0;
 }
+/* ********************************* Class-end */
